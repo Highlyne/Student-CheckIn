@@ -44,14 +44,8 @@ app.set("view engine", "handlebars");
 app.get("/", function(req, res) {
     connection.query("SELECT * FROM students;", function(err, data) {
         if (err) throw err;
-        console.log("test- This should be data: ", data);
-        console.log(JSON.stringify(data));
-        for (var i = 0; i < data.length; i++) {
-            var results = data[i];
-            console.log(results.name);
-        }
-    })
-    res.render("index", {students: results});
+    res.render("index", {students: data});
+})
 });
  
 // Starts the server to begin listening
