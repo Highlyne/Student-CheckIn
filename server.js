@@ -47,7 +47,15 @@ app.get("/", function(req, res) {
     res.render("index", {students: data});
 })
 });
- 
+
+app.post("/", function(req, res) {
+    // Test it
+    console.log('You sent, ' + req.body.name_input);
+connection.query("INSERT INTO students (name, phone) VALUES (?)", [req.body.name_input], function(err, result) {
+    if (err) throw err;
+    res.redirect("/");
+  });
+});
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
