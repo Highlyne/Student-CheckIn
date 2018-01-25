@@ -1,10 +1,36 @@
+<style>
+  #heading {
+    text-align: center;
+    font-size: 4em;
+    font:bolder;
+    color: teal;
+  } 
+  body {
+    background-color: rgb(247, 235, 222);
+
+  }
+  #address {
+    text-align: center;
+    color: black;
+    font-size: 18pt;
+  }
+
+</style>
+
 <div class="container">
   <div class="row">
     <div class="col s12">
-      <h1>Welcome</h1>
-      <br>
+      <span id="heading">Bayside School</span>
     </div>
   </div>
+  <div class="row">
+    <div class="col s12">
+      <span id="address">Please sign in below and have a seat. 
+        We will begin shortly.</span>
+      
+    </div>
+  </div>
+  
   <div class="row">
     <div class="col s5">
       <h3>Checked In</h3>
@@ -41,38 +67,28 @@
   </div>
 
   <div class="row">
-    <div class="col">
-      <div class="row">
-          <div class="input-field col s6">
-            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
-      </div>
-  <div class="row">
-    <div class="input-field col s12">
-      <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-      <label for="disabled">Disabled</label>
+    <div class="input-field col s4">
+      <input placeholder="First Name" id="first_name" type="text" class="validate">
+      <label for="first_name"></label>
     </div>
-  </div>
-      <br>
+    <div class="input-field col s4">
+      <input placeholder="Last Name" id="last_name" type="text" class="validate">
+      <label for="last_name"></label>
+    </div>
+    <div class="input-field col s4">
+      <input placeholder="Student Number" id="Std_Num" type="text" class="validate">
+      <label for="disabled"></label>
+    </div>
   <div class="row">
-    <div class="col">
-      <div class="row">
-          <div class="col s6">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Check In
+      <div class="col s6">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
             <i class="material-icons right">Check In</i>
             </button>
-          </div>
-          <div class="col">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        </div>
+      <div class="col s6">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
               <i class="material-icons right">Check Out</i>
             </button>
-          </div>
-      </div>
+        </div>
     </div>
-  </div>
 </div>
