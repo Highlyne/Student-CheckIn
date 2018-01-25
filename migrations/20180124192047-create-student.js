@@ -14,8 +14,13 @@ module.exports = {
       lastName: {
         type: Sequelize.STRING
       },
-      studentNumbe: {
+      studentNumber: {
         type: Sequelize.INTEGER
+      },
+      flag: {
+        type: Sequelize.BOOLEAN, 
+        allowNull: false, 
+        defaultValue: true 
       },
       createdAt: {
         allowNull: false,
