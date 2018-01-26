@@ -1,5 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
+//defining the modole (table)
   var Student = sequelize.define('Student', {
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
@@ -8,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
+        // associations can be defined here; but I have not for this HMWK
       }
     }
   });

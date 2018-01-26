@@ -44,7 +44,7 @@
   <div class="row">
     <div class="col s5">
       <ul>
-        {{#each students}}
+        {{#each dbStudent}}
         <li>
           <span class="glyphicons glyphicons-plus-sign"></span>
           <h4 class="truncate">
@@ -56,7 +56,7 @@
     <div class="col s2">
     </div>
     <div class="col s5">
-      {{#each students}}
+      {{#each dbStudent}}
       <li>
         <span class="glyphicons glyphicons-minus-sign"></span>
         <h4 class="truncate">
@@ -81,12 +81,12 @@
     </div>
   <div class="row">
       <div class="col s6">
-            <button class="btn waves-effect waves-light" type="submit" name="action">
+            <button class="btn waves-effect waves-light" type="submit" name="check_in">
             <i class="material-icons right">Check In</i>
             </button>
         </div>
       <div class="col s6">
-            <button class="btn waves-effect waves-light" type="submit" name="action">
+            <button class="btn waves-effect waves-light" type="submit" name="check_out">
               <i class="material-icons right">Check Out</i>
             </button>
         </div>
